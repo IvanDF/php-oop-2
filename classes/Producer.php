@@ -1,16 +1,23 @@
 <?php
-
+/**
+ * Producer CLASS
+ * 
+ * estesta da Product
+ */
 include_once __DIR__ . '/Product';
 
-class Producer extends Products {
-    public $producer_name;
+class Producer extends Products 
+{
+    private $producer_name;
 
-    public function __construct($product_name, $producer_type, $product_description, $price, $producer_name) {
-        parent:: __construct($product_name, $producer_type, $product_description, $price);
+    public function __construct($producer_name) 
+    {
         $this->producer_name = $producer_name;
     }
 
-    public function producerProducts() {
-        return $this->product_name . ' ' . $this->producer_name;
+    public function producerProducts() 
+    {
+        $product = parent::getProduct('iPhone');
+        return $product . ' ' . $this->producer_name;
     }
 }

@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: sans-serif;
+    background: linear-gradient(#d8f3dc, #95d5b2);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+.mainHeader {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.mainSection {
+    flex-grow: 1;
+    text-align:center;
+}
+
+h3,h5 {
+    padding: 20px;
+}
+
+.mainFooter {
+    text-align: center;
+    padding: 50px 0;
+}
+
+ul {
+    margin-top: 20px;
+}
+li {
+    padding: 10px;
+    list-style: none;
+}
